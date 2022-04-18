@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import '../styles/global.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+    return <Component {...pageProps} />
 }
 
-export default MyApp
+// top-level component common across all different pages
+// keep state when navigating between pages
+// can add global CSS files by importing from __app.js
+// nowhere else... because global CSS affects all elements on the page
